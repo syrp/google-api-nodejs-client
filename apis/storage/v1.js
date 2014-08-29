@@ -833,6 +833,7 @@ function Storage(options) {
           method: 'POST'
         },
         params: params,
+        mediaUrl: 'https://www.googleapis.com/storage/v1/b/' + params.destinationBucket + '/o/' + params.destinationObject + '/compose',
         requiredParams: ['destinationBucket', 'destinationObject'],
         pathParams: ['destinationBucket', 'destinationObject'],
         context: self
